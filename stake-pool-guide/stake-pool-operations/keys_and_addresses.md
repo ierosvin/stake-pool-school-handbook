@@ -61,11 +61,11 @@ To query your address \(see the utxo's at that address\), you first need to set 
 export CARDANO_NODE_SOCKET_PATH=~/relay/db/node.socket
 ```
 
-make sure that your node is running. Then use `cardano-cli shelley query utxo` to find out the address' balance:
+make sure that your node is running. Then use `cardano-cli query utxo` to find out the address' balance:
 
 ```text
 cardano-cli query utxo \
---mary-era \
+--shelley-era \
 --address $(cat payment.addr) \
 --testnet-magic 1097911063
 ```
